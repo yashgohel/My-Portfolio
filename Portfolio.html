@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Gohel Portfolio</title>
+    <style>
+        /* Base styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        header {
+            background-color: #606870;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #1f2020;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 2rem;
+            max-width: 900px;
+            margin: auto;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #606870;
+            color: white;
+        }
+        footer p {
+            margin: 0;
+        }
+        .light-mode {
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .dark-mode {
+            background-color: #333;
+            color: #f9f9f9;
+        }
+        .toggle-mode {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: #606870;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .toggle-mode:hover {
+            background-color: #606870;
+        }
+        .skills, .languages {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skills span, .languages span {
+            background-color: #606870;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body class="light-mode">
+    <button class="toggle-mode" onclick="toggleMode()">Switch to Dark Mode</button>
+    <header>
+        <h1>Yash Gohel</h1>
+        <p>Email: yashgohel0000@gmail.com | Phone: +91 9429951586</p>
+        <p><a href="https://linkedin.com/in/yashgohel" style="color: white;">LinkedIn Profile</a></p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="about">
+        <h2>Professional Summary</h2>
+        <p>Dynamic professional with a proven track record at Etech Global Services, excelling in CRM software and customer service strategies. Enhanced sales through effective problem resolution and streamlined order processing. Adept at team collaboration and relationship management, leveraging technical skills in Salesforce to drive operational efficiency and customer satisfaction.</p>
+    </section>
+    <section id="experience">
+        <h2>Professional Experience</h2>
+        <h3>Etech Global Services, Online Chat Representative</h3>
+        <p><strong>Gandhinagar, India | Aug 2023 – Oct 2025</strong></p>
+        <ul>
+            <li>Managed the complete order lifecycle for SMB customers (wireless/wireline) using Salesforce and CRM tools, ensuring seamless account management and issue resolution.</li>
+            <li>Boosted sales by successfully proposing viable service alternatives and enhancing customer satisfaction through proactive support for stalled orders.</li>
+            <li>Streamlined operational efficiency by overseeing order verification, outbound support, and optimizing workflows through integrated tools and strong technical proficiency (CLI and modern web apps).</li>
+        </ul>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <span>CRM software</span>
+            <span>Microsoft Office</span>
+            <span>Issue tracking</span>
+            <span>Problem solving</span>
+            <span>Customer service strategies</span>
+            <span>Team collaboration</span>
+            <span>Order processing</span>
+            <span>Relationship management</span>
+            <span>Generative AI</span>
+        </div>
+    </section>
+    <section id="education">
+        <h2>Education</h2>
+        <h3>Bachelor of Computer Science and Engineering</h3>
+        <p>BITS Edu Campus, Vadodara, India | 2018 – 2022</p>
+        
+        <h3>Additional Technical Experience (Internships)</h3>
+        <ul>
+            <li>
+                Android App Development Internship at Brainy Beam Technologies (Jan 2022 - Apr 2022)
+                <br>
+                <img src="Internship_BrainyBeam.jpg" alt="Brainy Beam Internship" style="max-width: 100%; height: auto; margin-top: 10px; border-radius: 5px;">
+            </li>
+            <li>
+                Android App Development Internship at Akash Technolabs (May 2021 - June 2021)
+                <br>
+                <img src="Akash TechnoLabs Internship.jpg" alt="Akash Technolabs Internship" style="max-width: 100%; height: auto; margin-top: 10px; border-radius: 5px;">
+            </li>
+        </ul>
+        
+        <h3>Additional Certificates</h3>
+        <ul>
+            <li>
+                Generative AI Foundations Certificate from UpGrad
+                <br>
+                <img src="Gen Ai UpGrad.jpeg" alt="Generative AI Certificate" style="max-width: 100%; height: auto; margin-top: 10px; border-radius: 5px;">
+            </li>
+            <li>
+                Getting Started with Microsoft Excel from Coursera
+                <br>
+                <img src="Excel Coursera.jpeg" alt="Microsoft Excel Certificate" style="max-width: 100%; height: auto; margin-top: 10px; border-radius: 5px;">
+            </li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>Languages</h2>
+        <div class="languages">
+            <span>English</span>
+            <span>Hindi</span>
+            <span>Gujarati</span>
+        </div>
+    </section>
+    <footer>
+        <p>Portfolio crafted with the assistance of AI. &copy; 2025 Yash Gohel. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMode() {
+            const body = document.body;
+            const button = document.querySelector('.toggle-mode');
+            if (body.classList.contains('light-mode')) {
+                body.classList.remove('light-mode');
+                body.classList.add('dark-mode');
+                button.textContent = 'Switch to Light Mode';
+            } else {
+                body.classList.remove('dark-mode');
+                body.classList.add('light-mode');
+                button.textContent = 'Switch to Dark Mode';
+            }
+        }
+    </script>
+</body>
+</html>
+
